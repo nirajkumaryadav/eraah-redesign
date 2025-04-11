@@ -1,0 +1,34 @@
+{
+  "name": "eraah-website-redesign",
+  "version": "1.0.0",
+  "description": "A modern, AI-inspired dark theme website for Eraah, an AI company specializing in tools for NGOs.",
+  "main": "src/index.jsx",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "keywords": [
+    "react",
+    "vite",
+    "dark-theme",
+    "AI",
+    "NGO"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-helmet": "^6.1.0",
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^6.0.0",
+    "sass": "^1.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^8.0.0",
+    "eslint-plugin-react": "^7.0.0",
+    "vite": "^4.2.0"
+  }
+}

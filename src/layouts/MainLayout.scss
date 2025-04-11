@@ -1,0 +1,89 @@
+@use "../styles/variables" as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: v.$font-family;
+  background-color: v.$background-secondary;
+  color: v.$text-color;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  color: v.$accent-secondary;
+  text-decoration: none;
+  transition: color v.$transition-speed ease;
+}
+
+a:hover {
+  color: v.$accent-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1rem 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+button {
+  cursor: pointer;
+  font-family: v.$font-family;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: v.$background-secondary;
+}
+
+::-webkit-scrollbar-thumb {
+  background: v.$primary-color;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: v.$accent-color;
+}
+
+::selection {
+  background: rgba(v.$accent-color, 0.3);
+  color: v.$text-color;
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: v.$background-secondary;
+  color: v.$text-color;
+
+  main {
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}

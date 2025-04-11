@@ -1,0 +1,61 @@
+$primary-color: #1e1e2f;
+$secondary-color: #2a2a3b;
+$text-color: #ffffff;
+$accent-color: #ff4081;
+$border-color: rgba(255, 255, 255, 0.1);
+$shadow-color: rgba(0, 0, 0, 0.5);
+
+body {
+  background-color: $primary-color;
+  color: $text-color;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $accent-color;
+}
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: lighten($accent-color, 10%);
+  }
+}
+
+button {
+  background-color: $accent-color;
+  color: $text-color;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: lighten($accent-color, 10%);
+  }
+}
+
+.card {
+  background-color: $secondary-color;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px $shadow-color;
+  padding: 20px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.footer {
+  background-color: $secondary-color;
+  padding: 20px;
+  text-align: center;
+}

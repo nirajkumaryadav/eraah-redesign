@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1e1e2f;
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+  
+  .navbar {
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      
+      li {
+        margin-left: 1.5rem;
+        
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          transition: color 0.3s ease;
+          
+          &:hover {
+            color: #ff4081;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    
+    .navbar ul {
+      margin-top: 1rem;
+    }
+  }
+}
